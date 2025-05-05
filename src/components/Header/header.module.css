@@ -1,0 +1,32 @@
+:root {
+  --primay-color: #00afff;
+  --text-color: #ffffff;
+}
+
+.header {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a span {
+  color: var(--primay-color);
+}
+
+.header a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.header nav {
+  display: flex;
+  gap: 3rem;
+}
+
+.header a:hover {
+  color: var(--primay-color);
+}
