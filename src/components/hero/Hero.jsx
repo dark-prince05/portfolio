@@ -2,7 +2,7 @@ import profilePic from "../../assets/profile.png";
 import styles from "./hero.module.css";
 export default function Hero() {
   return (
-    <section>
+    <section className={styles.heroSection}>
       <div className={styles.details}>
         <h1 className={`${styles.name} ${styles.typing}`}>
           Hi, <span>I'm Barathraj</span>
@@ -26,11 +26,11 @@ export default function Hero() {
             cx="100"
             cy="100"
             r="99"
-            stroke-width="2"
+            strokeWidth="2"
             stroke="#00afff"
-            stroke-dasharray="25 10 10 25"
+            strokeDasharray="25 10 10 25"
             fill="none"
-            stroke-linecap="round"
+            strokeLinecap="round"
           ></circle>
         </svg>
         <img

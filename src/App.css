@@ -8,4 +8,10 @@
 :root {
   --primary-color: #00afff;
   --text-color: #ffffff;
+  --bg-color: #000000;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
 }
