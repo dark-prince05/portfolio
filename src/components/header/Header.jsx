@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <a href="https://www.linkedin.com/in/barathraj-b-00542130a">
-        Barath<span>raj</span>
+        Barath<span>raj.</span>
       </a>
       <nav>
         <a href="#about">About</a>

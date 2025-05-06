@@ -1,0 +1,43 @@
+@import "../../App.css";
+
+.header {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a span {
+  color: var(--primary-color);
+}
+
+.header a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: all 0.3s linear;
+}
+
+.header :not(:first-child) a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: transparent;
+  transition: all 0.3s linear;
+}
+
+.header nav {
+  display: flex;
+  gap: 3rem;
+}
+
+.header a:hover {
+  color: var(--primary-color);
+}
+
+.header a:hover::after {
+  width: 100%;
+  background-color: var(--primary-color);
+}
