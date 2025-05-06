@@ -3,8 +3,8 @@ import reactLogo from "../../../src/assets/react.svg";
 
 export default function About() {
   return (
-    <section className={styles.aboutSection}>
-      <h2 id="about" className={styles.title}>
+    <section id="about" className={styles.aboutSection}>
+      <h2 className={styles.title}>
         About <span>Me</span>
       </h2>
       <div className={styles.contentSection}>

@@ -1,0 +1,63 @@
+@import "../../App.css";
+
+.title {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 5rem 0;
+}
+
+.title span {
+  color: var(--primary-color);
+}
+
+.skills {
+  position: relative;
+  perspective: 600px;
+}
+
+.skillContainer {
+  max-width: 70rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 4rem;
+}
+
+.skill {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 15%;
+  object-fit: contain;
+  transition: all 0.3s linear;
+  z-index: 3;
+}
+
+.skillBackground {
+  background-color: #00afff30;
+  border-radius: 10px;
+  height: 10rem;
+  width: 80%;
+  margin: 0 auto;
+  transition: all 0.3s linear;
+}
+
+.skillName {
+  margin-top: 1rem;
+  color: var(--text-color);
+  text-align: center;
+  font-weight: 900;
+}
+
+.skills:hover .skillBackground {
+  background-color: var(--primary-color);
+  transform: rotateX(70deg) translateY(50px);
+}
+
+.skills:hover .skill {
+  transform: translateY(-50px);
+  filter: drop-shadow(0 0 5px var(--primary-color))
+    drop-shadow(0 0 10px var(--primary-color))
+    drop-shadow(0 0 20px var(--primary-color));
+}

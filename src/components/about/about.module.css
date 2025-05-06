@@ -2,10 +2,11 @@
 
 .aboutSection {
   overflow: hidden;
+  min-height: 45rem;
 }
 
 .title {
-  margin: 5rem 0;
+  margin: 10rem 0 5rem 0;
   color: var(--text-color);
   font-size: 2.5rem;
   text-align: center;
@@ -16,7 +17,7 @@
   font-size: 1.2rem;
 }
 
-span {
+.title span {
   color: var(--primary-color);
 }
 
