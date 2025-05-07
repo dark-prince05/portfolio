@@ -7,6 +7,7 @@
 
 :root {
   --primary-color: #00afff;
+  --primary-fade: #00afff30;
   --text-color: #ffffff;
   --bg-color: #000000;
   scroll-behavior: smooth;

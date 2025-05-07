@@ -24,6 +24,7 @@
 .contentSection {
   display: flex;
   max-width: 70rem;
+  width: calc(100% - 4rem);
   align-items: center;
   margin: 0 auto;
   gap: 2rem;
