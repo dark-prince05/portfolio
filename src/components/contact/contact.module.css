@@ -1,0 +1,81 @@
+@import "../../App.css";
+
+.contactSection {
+  max-width: 70rem;
+  width: calc(100% - 4rem);
+  margin: 0 auto;
+}
+
+.title {
+  color: var(--text-color);
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 10rem 0 5rem 0;
+}
+
+.title span {
+  color: var(--primary-color);
+}
+
+.form > * {
+  max-width: 50rem;
+  width: calc(100% - 4rem);
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--text-color);
+  padding: 0.4rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  transition:
+    background-color 0.3s,
+    color 0.3s,
+    box-shadow 0.3s;
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.form > *:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+.form {
+  display: grid;
+  justify-items: center;
+  row-gap: 2rem;
+}
+
+.form button:hover {
+  background-color: var(--primary-color);
+  color: #000000;
+  box-shadow: 0 0 30px var(--primary-color);
+  cursor: pointer;
+}
+
+.iconContainer {
+  display: flex;
+  max-width: 50rem;
+  width: calc(100% - 8rem);
+  margin: 1rem auto 5rem;
+  justify-content: space-evenly;
+}
+
+.icon {
+  color: var(--primary-color);
+  width: 3rem;
+  height: 3rem;
+  transition: all 0.5s linear;
+  perspective: 200px;
+}
+
+.iconParent:hover .icon {
+  transform: rotateY(360deg) scale(1.3);
+  filter: drop-shadow(0 0 10px var(--primary-color));
+}
+
+.innerHeading {
+  color: var(--text-color);
+  text-align: center;
+  margin-top: 3rem;
+}

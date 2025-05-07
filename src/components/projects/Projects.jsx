@@ -5,7 +5,7 @@ export default function Projects() {
   const projectList = getProjects();
 
   return (
-    <section id="projects" className={styles.projectSection}>
+    <section id="projects">
       <h2 className={styles.title}>
         My <span>Projects</span>
       </h2>

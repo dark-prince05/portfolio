@@ -3,7 +3,11 @@ import styles from "./header.module.css";
 export default function Header() {
   return (
     <header className={styles.header}>
-      <a href="https://www.linkedin.com/in/barathraj-b-00542130a">
+      <a
+        href="https://www.linkedin.com/in/barathraj-b-00542130a"
+        target="_blank"
+        rel="noopener norefferer"
+      >
         Barath<span>raj.</span>
       </a>
       <nav>

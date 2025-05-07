@@ -5,7 +5,7 @@ export default function Skills() {
   const imageList = images();
 
   return (
-    <section id="skills" className={styles.skillSection}>
+    <section id="skills">
       <h2 className={styles.title}>
         Skills <span>& Tools</span>
       </h2>
