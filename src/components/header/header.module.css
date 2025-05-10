@@ -41,3 +41,53 @@
   width: 100%;
   background-color: var(--primary-color);
 }
+
+.hamburgerMenuIcon {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .header a {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .hamburgerMenuIcon,
+  .hamburgerMenuClose {
+    display: block;
+    color: var(--text-color);
+    font-size: 1.7rem;
+  }
+
+  .hamburgerMenuClose {
+    margin-left: auto;
+  }
+
+  .header nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -50%;
+    text-align: end;
+    background-color: var(--bg-color);
+    gap: 1rem;
+    width: 50%;
+    height: 100%;
+    padding: 1rem 2rem;
+    z-index: 3;
+    transition: all 0.2s linear;
+  }
+
+  .header nav.clicked {
+    right: 0%;
+  }
+
+  .header a:hover::after {
+    width: 0%;
+  }
+  .header :not(:first-child) a {
+    font-size: 1.1rem;
+  }
+}

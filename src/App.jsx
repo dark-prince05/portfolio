@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Background />
-      {/* <Header /> */}
+      <Header />
       <Main />
       <Footer />
     </>
