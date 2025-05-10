@@ -85,3 +85,54 @@
   text-align: center;
   margin-top: 3rem;
 }
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .form > * {
+    width: 100%;
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+  }
+
+  .form {
+    row-gap: 1.5rem;
+  }
+
+  .iconContainer {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .form > * {
+    width: 110%;
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .form {
+    row-gap: 1.3rem;
+  }
+
+  .iconContainer {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .innerHeading {
+    font-size: 1.2rem;
+  }
+
+  .icon {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}
