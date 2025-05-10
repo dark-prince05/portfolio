@@ -11,7 +11,7 @@ export default function Hero() {
         <div className={styles.info}>
           <a href="#contact">Contact Info</a>
           <a
-            href="../../../public/assests/Resume.pdf"
+            href="/assests/Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >

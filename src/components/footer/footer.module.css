@@ -1,6 +1,6 @@
 @import "../../App.css";
 
-footer div {
+.footerSection div {
   background-color: var(--primary-fade);
   color: var(--text-color);
   text-align: center;
@@ -11,19 +11,19 @@ footer div {
     arial, sans-serif;
 }
 
-footer div span {
+.footerSection div span {
   color: var(--primary-color);
 }
 
 @media screen and (max-width: 600px) {
-  footer div {
+  .footerSection div {
     font-size: 1rem;
     padding: 1rem;
   }
 }
 
 @media screen and (max-width: 450px) {
-  footer div {
+  .footerSection div {
     font-size: 0.8rem;
     padding: 0.8rem;
   }
