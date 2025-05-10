@@ -7,10 +7,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
+  gap: 2rem;
 }
 
 .pictureContainer {
-  width: 40%;
+  width: 35rem;
 }
 
 .profilePic {
@@ -104,5 +105,74 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .name {
+    font-size: 2.5rem;
+  }
+  .role {
+    font-size: 1.5rem;
+  }
+  .info a {
+    font-size: 1.1rem;
+  }
+  .pictureContainer {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .name {
+    font-size: 2rem;
+  }
+  .role {
+    font-size: 1.2rem;
+  }
+  .info a {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .name {
+    font-size: 1.7rem;
+  }
+  .role {
+    font-size: 1rem;
+  }
+  .info a {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heroSection {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+  .info {
+    display: flex;
+    justify-content: center;
+  }
+  .pictureContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .name {
+    font-size: 1.2rem;
+  }
+  .role {
+    font-size: 0.8rem;
+  }
+  .info a {
+    font-size: 0.5rem;
   }
 }

@@ -18,13 +18,13 @@
 }
 
 .form > * {
-  max-width: 50rem;
+  max-width: 40rem;
   width: calc(100% - 4rem);
   background: transparent;
   border: 2px solid var(--primary-color);
   color: var(--text-color);
   padding: 0.4rem 1rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border-radius: 10px;
   transition:
     background-color 0.3s,
@@ -46,11 +46,18 @@
   row-gap: 2rem;
 }
 
-.form button:hover {
+.form button {
   background-color: var(--primary-color);
   color: #000000;
+  transition:
+    box-shadow 0.3s linear,
+    transform 0.3s;
+}
+
+.form button:hover {
   box-shadow: 0 0 30px var(--primary-color);
   cursor: pointer;
+  transform: scale(1.02);
 }
 
 .iconContainer {
@@ -66,7 +73,6 @@
   width: 3rem;
   height: 3rem;
   transition: all 0.5s linear;
-  perspective: 200px;
 }
 
 .iconParent:hover .icon {
