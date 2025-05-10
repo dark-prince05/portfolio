@@ -90,4 +90,8 @@
   .header :not(:first-child) a {
     font-size: 1.1rem;
   }
+
+  .header:first-child {
+    font-size: 7rem;
+  }
 }
