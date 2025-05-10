@@ -22,7 +22,7 @@ export default function Projects() {
               <div className={styles.techStack}>
                 <b>Tech Stack:</b> {project.tech}
               </div>
-              <p>{project.desc}</p>
+              <p className={styles.projDesc}>{project.desc}</p>
               <div className={styles.buttons}>
                 <a
                   href={project.demo}

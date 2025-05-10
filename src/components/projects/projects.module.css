@@ -54,9 +54,13 @@
   font-size: 1.1rem;
 }
 
+.projDesc {
+  text-align: justify;
+}
+
 .buttons {
   display: flex;
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
   gap: 1rem;
 }
 
@@ -74,4 +78,74 @@
   background-color: var(--primary-color);
   color: #000000;
   box-shadow: 0 0 10px var(--primary-color);
+}
+
+@media screen and (max-width: 1000px) {
+  .project {
+    flex-direction: column;
+  }
+  .projImg {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 1.5rem;
+    margin: 10rem 0 2rem 0;
+  }
+
+  .projTitle {
+    font-size: 1.1rem;
+  }
+
+  .techStack b {
+    font-size: 1rem;
+  }
+
+  .techStack {
+    font-size: 0.9rem;
+  }
+
+  .projDesc {
+    font-size: 0.8rem;
+  }
+
+  .buttons a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .project {
+    padding: 1.5rem;
+  }
+
+  .projectsContainer {
+    width: calc(100% - 2rem);
+  }
+
+  .projDesc {
+    text-align: start;
+  }
+
+  .projTitle {
+    font-size: 1rem;
+  }
+
+  .techStack b {
+    font-size: 0.9rem;
+  }
+
+  .techStack {
+    font-size: 0.8rem;
+  }
+
+  .projDesc {
+    font-size: 0.8rem;
+  }
+
+  .buttons a {
+    font-size: 0.7rem;
+  }
 }
