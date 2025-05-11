@@ -1,6 +1,7 @@
 import styles from "./header.module.css";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,10 +27,18 @@ export default function Header() {
       )}
       <nav className={isMenuOpen ? styles.clicked : ""} onClick={handleClick}>
         {isMenuOpen && <RxCross2 className={styles.hamburgerMenuClose} />}
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <Link to="about" smooth={true} duration={500}>
+          About
+        </Link>
+        <Link to="skills" smooth={true} duration={500}>
+          Skills
+        </Link>
+        <Link to="projects" smooth={true} duration={700}>
+          Projects
+        </Link>
+        <Link to="contact" smooth={true} duration={700}>
+          Contact
+        </Link>
       </nav>
     </header>
   );

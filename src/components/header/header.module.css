@@ -17,6 +17,7 @@
   font-weight: bold;
   font-size: 1.5rem;
   transition: all 0.3s linear;
+  cursor: pointer;
 }
 
 .header :not(:first-child) a::after {
